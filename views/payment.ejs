@@ -1,0 +1,15 @@
+<html lang="fa">
+<head>
+    <title>نتیجه پرداخت</title>
+</head>
+<body>
+<h1><%= success ? "موفق" : "ناموفق" %></h1>
+<p>کد رهگیری : <%= authority %></p>
+<p>شما تا چند لحظه دیگه هدایت میشید به ربات</p>
+</body>
+<script>
+    setTimeout(()=>{
+        window.location.assign("https://t.me/shop135bot")
+    },5000)
+</script>
+</html>
