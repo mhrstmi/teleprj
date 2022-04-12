@@ -66,7 +66,10 @@ const EventListener = {
     [MAIN_BUTTONS_TEXT.MY_BUYS]:async ctx=>{
         const userTel = ctx.message.from
         let user = await User.findOne({telId: userTel.id})
-        ctx.reply(USER_BUYS_LIST_MESSAGE,buysProductBtns(user.buys))
+        if (user?.buys?.id == null) {
+            ctx.reply("خریدی ثبت نشده")
+        } else ctx.reply(USER_BUYS_LIST_MESSAGE,buysProductBtns(user.buys))
+
     },
     
 

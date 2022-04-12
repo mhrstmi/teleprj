@@ -8,7 +8,7 @@ const MAIN_BUTTONS_TEXT = {
     CART: "🛍 سبد خرید",
     ABOUT: "📝 درباره ما",
     QUESTIONS: "⁉️ سوالات پرتکرار",
-    SECURBUY: " 🔒 خرید ایمن",
+    SECURBUY: "🔑 خرید ایمن",
     ADMIN: "👨🏻‍💻 ارتباط با ادمین",
 
 }
